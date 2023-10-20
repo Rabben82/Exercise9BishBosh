@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bish Bosh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="col-md-12 img-logo">
+                <img src="./Assets/logish.png" alt="bishbosh" class="img-fluid" class="mx-auto">
+            </div>
+        </header>
+
+        <div class="container text-tutorial">
+            <div class="col-md-12">
+                <p>
+
+                    "Bish-Bosh" är ett enkelt matematiskt spel som listar alla tal mellan 1 och 100 med vissa speciella
+                    regler. Spelet går ut på att ersätta vissa tal med ord enligt följande regler:
+
+                    Om ett tal är jämnt delbart med 3, ersätts det talet med ordet "Bish".
+                    Om ett tal är jämnt delbart med 4, ersätts det talet med ordet "Bosh".
+                    Om ett tal är jämnt delbart både med 3 och 4, ersätts det talet med ordet "Bish-Bosh".
+                    Så, när man spelar Bish-Bosh och listar talen mellan 1 och 100, kan resultatet se ut så här:
+
+                    1, 2, Bish, Bosh, 5, Bish, 7, Bosh, Bish, 10, 11, Bish-Bosh, 13, 14, Bish...
+
+                    Spelet kan vara roligt att spela med vänner eller som en enkel övning för att träna
+                    multiplikationstabellerna och förstå konceptet med att vara jämnt delbar. Det kan också vara en
+                    rolig matematisk utmaning för barn och vuxna alike.
+                </p>
+            </div>
+            <div class="col-md-12 text-bishbosh">
+                <form action="">
+                    <label for="tal1">Tal 1 (Bish):</label>
+                    <input id="tal1" name="numberOne">
+                    <label for="tal2">Tal 2 (Bosh):</label>
+                    <input id="tal2" name="numberTwo">
+                    <label for="loop">Loop Antal:</label>
+                    <input id="loop" name="loop">
+                    <button type="button" id="formBtn">Submit</button>
+                </form> 
+            </div>
+            <div class="col-md-12 text-output" id="output">
+                <p id="output">
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>Webmaster | &copy; 2023 Bish-Bosh</footer>
+    <script src="/bishbosh.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
